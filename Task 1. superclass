@@ -35,14 +35,17 @@ class Shapes():
         def area(self):
             return self.aAxis * self.bAxis * math.pi
 
-        
-          
 
-
+testCirc1 = Shapes.Circle(1)
+if (testCirc1.area() != 3.14):
+    print("Wrong area! Area should be 3.14 but is", testCirc1.area())
+else:
+    print("area function test passed")
 
 circ1 = Shapes.Circle(1)
 print("Circle 1 radius: ", circ1.radius)
 print("Circle 1 area: ", circ1.area())
+
 
 r1 = Shapes.Rectangle(5,6)
 print("Rectangle are is: ", r1.area())
@@ -52,6 +55,8 @@ print("Square area is: ", Sqr1.area())
 
 ellips1 = Shapes.Ellipse(1,1)
 print("Ellipse area is: ", ellips1.area())
+
+
 
 
 
